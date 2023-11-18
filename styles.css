@@ -1,0 +1,254 @@
+.main-container{
+    max-width: 940px;
+    height: 730px;
+    background: #FFF;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left:0;
+    right:0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Vh (Viewport Height) postavlja minimalnu visinu na 100% visine viewport-a */
+    margin: 0; /* Uklanja defaultni margin */
+    /* Dodajte dodatne stilove za body po potrebi */
+}
+
+header{
+    width: 941px;
+    height: 100px;
+    flex-shrink: 0;
+    color: #DDDDDD;
+    display: flex;
+}
+
+.header-left-box{
+    width: 301px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 5px 5px;
+    background: #DDD;
+    margin-left: 490px;
+    margin-right: 20px;
+}
+
+.header-right-box{
+    width: 621px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 5px 5px;
+    background: #DDD;
+    margin-right: 489px;
+}
+
+footer{
+    width: 941px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.footer-box{
+    width: 941px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 5px 5px;
+    background: #DDD;
+    margin-left: 490px;
+}
+
+.top-row {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text-box {
+    position: absolute;
+    left: 1130px; /* 300.93px širina + 20px razmak */
+    top: 0; /* Prilagodite po potrebi */
+    background-color: white; /* Prilagodite boju pozadine po potrebi */
+    color: blue; /* Boja teksta */
+    padding: 10px; /* Unutrašnji razmak */
+    border:none;
+    background: transparent;
+}
+
+#text-box-1{
+    display: flex;
+    width: 300.93px;
+    height: 120px;
+    flex-direction: column;
+    justify-content: flex-end;
+    position:absolute;
+}
+
+#text-box-1 h1 {
+    color: #134880;
+    font-family: SourceSansPro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    width: 300px;
+    height: auto;
+    white-space: normal;
+    position: fixed;
+}
+
+#text-box-2 {
+    bottom: 25px;
+    display: flex;
+    width: 300.93px;
+    height: 156px;
+    flex-direction: column;
+    justify-content: center;   
+    width: 300px;
+    height: auto;
+    white-space: normal;
+    position: fixed;
+}
+
+#text-box-2 p{
+    color: #484A4C;
+    font-family: SourceSansPro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+    letter-spacing: -0.2px;
+}
+
+.top-row img {
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.top-row img:last-child {
+    margin-right: 0; /* Uklonite razmak za poslednju sliku */
+}
+
+
+.top-row .img1 {
+    width: 220px;
+    height: 200px; /* Primer dimenzija, prilagodite po potrebi */
+}
+
+.top-row .img2 {
+    width: 120px; /* Primer dimenzija */
+    height: 200px;
+}
+
+.top-row .img3 {
+    width: 220px; /* Primer dimenzija */
+    height: 200px;
+}
+
+.top-row .img4 {
+    width: 180px; /* Primer dimenzija */
+    height: 200px;
+}
+.top-row .img5 {
+    width: 260px; /* Primer dimenzija */
+    height: 200px;
+}
+
+.bottom-row {
+    margin-bottom: 50px; /* Razmak iznad, ispod footera */
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+.bottom-row img {
+    height: 200px; /* Ako želite istu visinu kao i u top-row */
+    border-radius: 5px;
+    margin-right: 20px;
+    display: inline-block; /* Razmak između slika */
+}
+
+.bottom-row img:last-child {
+    margin-right: 0; /* Uklonite razmak za poslednju sliku */
+}
+
+.bottom-row .img1{
+    width:220px ;
+    height: 500px;
+}
+
+.bottom-row .img2{
+    width: 260px;
+}
+
+.bottom-row .img3{
+    width: 260px;
+}
+
+.bottom-row .img4{
+    width: 120px ;
+}
+
+
+.arrows {
+    display: flex;
+    width: 60px;
+    height: 130px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    margin-left: 1050px;
+    margin-top: 570px;
+    z-index: 10;
+
+}
+
+.arrow-left {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    background: url('Slike/arrow-blue-left.png') no-repeat center center;
+    background-size: contain;
+    border: 2px solid#134880 ; /* Crni border, prilagodite boju po potrebi */
+    border-radius: 5px;
+    
+}
+
+.arrow-left:hover {
+    background: url('Slike/arrow-gray-left.png') no-repeat center center;
+    background-size: contain;
+    border: 2px solid #DDDDDD;
+}
+
+.arrow-right {
+    width: 60px;
+    height: 60px;
+    background: url('Slike/arrow-blue-right.png') no-repeat center center;
+    background-size: contain;
+    border: 2px solid #134880 ; /* Crni border, prilagodite boju po potrebi */
+    border-radius: 5px;
+}
+
+.arrow-right:hover {
+    background: url('Slike/arrow-gray-right.png') no-repeat center center;
+    background-size: contain;
+    border: 2px solid #DDDDDD;
+}
+
+
+
+
+
+

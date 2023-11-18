@@ -1,0 +1,20 @@
+{
+  "name": "praksa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "slider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel slider.js -o dist/slider.js",
+    "minify": "terser dist/slider.js -o dist/slider.min.js --compress --mangle"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "terser": "^5.24.0"
+  }
+}
